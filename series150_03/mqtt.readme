@@ -1,0 +1,30 @@
+#
+# Copyright (c) 2016 Keonn Technologies S.L.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+#
+
+This is a simple example of an application sending the reads to a MQTT broker
+
+basic example
+--------------------------------------------
+./executeClass.sh com.keonn.embedded.MQTTPublish -b tcp://localhost:1883
+
+
+define all possible MQTT options example
+--------------------------------------------
+./executeClass.sh com.keonn.embedded.MQTTPublish -b tcp://localhost:1883 -i mqtt_client_id -q 2 -u topic
+
+define all possible MQTT options with debug example
+--------------------------------------------
+./executeClass.sh com.keonn.embedded.MQTTPublish -d -b tcp://localhost:1883 -i mqtt_client_id -q 2 -u topic
+
+define all possible MQTT options with debug example
+--------------------------------------------
+./executeClass.sh com.keonn.embedded.MQTTPublish -d -b tcp://localhost:1883 -i mqtt_client_id -q 2 -u topics

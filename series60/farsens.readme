@@ -1,0 +1,25 @@
+#
+# Copyright (c) 2016 Keonn Technologies S.L.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+#
+
+The example requires the EPC pattern of the sensors to know how to extract data from them.
+Also, some sensors require a setup as a previous step to be useful. 
+
+Example to read all type of Farsens tags
+- Option d will always be the same
+- Option a is a multiple option to define the antenna/s in use
+- Option v defines the pattern of epc of Vortex sensors
+- Option w defines the pattern of epc of Vortex-temp sensors
+- Option x defines the pattern of epc of Vortex-press sensors
+- Option k defines the pattern of epc of Kinnetic sensors
+- Option p defines the pattern of epc of Pyros sensors
+
+./executeClass.sh com.keonn.embedded.FarsensSensorsTest -d /dev/ttyO1 -a 1 -v 0000 -w 1111 -z 2222 -k 3333 -p 4444
